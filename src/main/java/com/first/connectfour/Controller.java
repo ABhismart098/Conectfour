@@ -1,4 +1,4 @@
-package com.first.connector;
+package com.first.connectfour;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;

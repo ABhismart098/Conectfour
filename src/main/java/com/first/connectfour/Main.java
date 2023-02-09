@@ -11,16 +11,11 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private ModuleLayer.Controller controller;
-
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("game.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("Game.fxml"));
         GridPane rootGridPane = loader.load();
-
-        controller = loader.getController();
-
 
         MenuBar menuBar = createMenu();
         menuBar.prefWidthProperty().bind(primaryStage.widthProperty());
